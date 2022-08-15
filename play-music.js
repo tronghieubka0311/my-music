@@ -210,7 +210,7 @@ const app = {
     // Xử lí lặp lại 1 bài hát
     repeatBtn.onclick = function (e) {
       _this.isRepeat = !_this.isRepeat;
-      repeatBtn.classList.add("active", _this.isRepeat);
+      repeatBtn.classList.toggle("active", _this.isRepeat);
     };
 
     // Xử lí next nhạc khi nhạc end
